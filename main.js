@@ -17,22 +17,22 @@ searchButton.addEventListener("click", () => {
             document.getElementById("air").innerHTML = data.current.wind_kph + "Km/h"; 
 
             if(data.current.condition.text === "Mist"){
-                weather.src = "../images/mist.png";
+                weather.src = "/images/mist.png";
             }
             else if(data.current.condition.text === "Clear"){
-                weather.src = "../images/clear.png";
+                weather.src = "/images/clear.png";
             }
             else if(data.current.condition.text === "Clouds"){
-                weather.src = "../images/clouds.png";
+                weather.src = "/images/clouds.png";
             }
             else if(data.current.condition.text === "Drizzle"){
-                weather.src = "../images/drizzle.png";
+                weather.src = "/images/drizzle.png";
             }
             else if(data.current.condition.text === "Haze"){
-                weather.src = "../images/haze.png";
+                weather.src = "/images/haze.png";
             }
             else if(data.current.condition.text === "Rainy"){
-                weather.src = "../images/rainy.png";
+                weather.src = "/images/rainy.png";
             }
 
             document.querySelector(".weather").style.display = "block";
