@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+    <script src="/bootstrap/js/bootstrap.js"></script>
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center flex-column text-center mx-auto">
+        <h1 class="d-flex justify-content-center text-bg-success">Calculator</h1>
+        <div>
+            <div class="d-flex p-3 mt-0 row mx-auto border bg-black text-end">
+                <label for="number"></label>
+                <input type="text" name="number" class="p-4  text-end form-control-lg " readonly id="input">
+                <!-- <textarea id="input" class="p-3 form-control-lg  text-end no-auto-shrink max-row-1" readonly> </textarea> -->
+            </div>
+            <div class="d-flex row-cols-2 mx-auto border border-dark">
+                <button class="btn btn-danger p-3 border border-1 rounded-0" id="reset">CE</button>
+                <button class="btn btn-warning p-3 border border-1 border-black rounded-0" id="remove">C</button>
+            </div>
+            <div class="d-flex row-cols-5 mx-auto border border-1 border-black">
+                <button class="btn btn-light p-4 border-black" id="num">7</button>
+                <button class="btn btn-light border-black" id="num">8</button>
+                <button class="btn btn-light border-black" id="num">9</button>
+                <button class="btn btn-light border-black" id="sym">/</button>
+                <button class="btn btn-light border-black" id="sym">%</button>
+            </div>
+            <div class="d-flex row-cols-5 mx-auto border border-1 border-black">
+                <button class="btn btn-light p-4 border-black" id="num">4</button>
+                <button class="btn btn-light border-black" id="num">5</button>
+                <button class="btn btn-light border-black" id="num">6</button>
+                <button class="btn btn-light border-black" id="sym">*</button>
+                <button class="btn btn-light border-black" id="sym">√</button>
+            </div>
+            <div class="d-flex row-cols-5 mx-auto border border-1 border-black">
+                <button class="btn btn-light p-4 border-black" id="num" value="1">1</button>
+                <button class="btn btn-light border-black" id="num" value="8">2</button>
+                <button class="btn btn-light border-black" id="num" value="9">3</button>
+                <button class="btn btn-light border-black" id="sym" value="-">-</button>
+                <button class="btn btn-light border-black" id="sym" value="+">+</button>
+            </div>
+            <div class="d-flex col-12 mx-auto border border-1 border-black">
+                <button class="btn btn-light col-3 p-4 border-black" id="num" value="0">0</button>
+                <button class="btn btn-light col-3 p-4 justify-content-center border-black" id="num" value=".">.</button>
+                <button class="d-flex btn btn-success p-4 col-6 justify-content-center border-black" id="result" value="= " >=</button>
+            </div>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
