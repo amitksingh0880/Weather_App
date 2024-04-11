@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: white;
+        }
+
+        .card {
+            width: 80%;
+            max-width: 480px;
+            padding: 35px 30px;
+            text-align: center;
+            color: white;
+            background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+            margin: 90px auto 0px;
+            background-color: #96d8e7;
+            border-radius: 25px;
+        }
+
+        #logo {
+            color: rgb(51, 45, 45);
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .search {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #input-box {
+            border: 0;
+            background: #e3e8e8;
+            color: #5a5a5a;
+            flex: 1;
+            margin-right: 15px;
+            font-size: medium;
+            padding: 8px 23px;
+            border-radius: 8px;
+        }
+
+        #search-button {
+            border: 0;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        #search-button img {
+            width: 28px;
+        }
+
+        .weather img {
+            margin-top: 50px;
+            width: 190px;
+        }
+
+        #temp {
+            font-weight: 400;
+            font-size: 70px;
+        }
+
+        #city {
+            font-weight: 400;
+            font-size: 45px;
+            margin-top: -12px;
+        }
+
+        .weather {
+            display: none;
+        }
+
+        .values {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 20px;
+            margin-top: 50px;
+        }
+
+        .data {
+            display: flex;
+            align-items: center;
+            text-align: left;
+        }
+
+        .data img {
+            margin-bottom: 30px;
+            width: 50px;
+            margin-right: 10px;
+        }
+
+        #humidity,
+        #air {
+            margin-top: 20px;
+            font-size: 25px;
+        }
+
+        .error {
+            display: none;
+            font-size: 15px;
+            margin-left: 8px;
+            margin-top: 3px;
+            text-align: left;
+            color: red;
+        }
+    </style>
+    <div class="card">
+        <div id="logo">
+            <h1>Weather App</h1>
+        </div>
+        <div class="search">
+            <label for="input"></label>
+            <input type="text" name="input" id="input-box" placeholder="Enter the name of city" spellcheck="false">
+            <button id="search-button">
+                <img src="../images/loupe_1296902.png" alt="">
+            </button>
+        </div>
+        <div class="error">
+            <p>Invalid City Name</p>
+        </div>
+        <div class="weather">
+            <img id="weather_icon" src="../images/cloudy_1163661.png" alt="weather icon">
+            <h1 id="temp">23</h1>
+            <h2 id="city">Delhi</h2>
+            <div class="values">
+                <div class="data">
+                    <img src="../images/dew_7334238.png" alt="">
+                    <div>
+                        <p id="humidity">40</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="data">
+                    <img src="../images/fresh-air.png" alt="">
+                    <div>
+                        <p id="air">5 km/h</p>
+                        <p>Wind-Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
